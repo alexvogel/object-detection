@@ -1,0 +1,5 @@
+python detect_obj.py \
+  --frozen_graph /data/prog/workspaces/workspace_studium/nd_self_driving_car_engineer/Projects/traffic-light-detection-classification/bucket_tl/models/model/inference_udacity_sim/frozen_inference_graph.pb \
+  --label_map /data/prog/workspaces/workspace_studium/nd_self_driving_car_engineer/Projects/traffic-light-detection-classification/bucket_tl/data_udacity/label_map.pbtxt \
+  --input_image /data/prog/workspaces/workspace_studium/nd_self_driving_car_engineer/Projects/traffic-light-detection-classification/dataset_from_udacity_student/data/real_training_data/red \
+  --output_dir outdir13_tl

@@ -1,0 +1,1 @@
+bazel build ${TF14}/tensorflow/tensorflow/tools/graph_transforms:summarize_graph
