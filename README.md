@@ -1,16 +1,20 @@
-1) Install Ubuntu
-2) Install Anaconda
+# Workflow to retrain the coco neural net to detect new set of objects
 
-or AMI (Udacity Robotics Deep Learning Laboratory - ami-e4fd199e)
+1) Install Ubuntu
+
+2) Install Anaconda
 
 3) The Tensorflow Object Detection API has been installed as documented in the installation instructions (https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md). This includes installing library dependencies, compiling the configuration protobufs and setting up the Python environment.
 
-3.1)
-# create environment with python version 2.7
+4) create environment with python version 2.7
+```sh
 conda create -n tf13 python=2.7
+```
 
-# activate new environment
+5) activate new environment
+```sh
 conda activate tf13
+```
 
 # install tensorflow 1.3 in environment
 # for different tf versions or without gpu support choose another binary URL
