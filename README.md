@@ -1,4 +1,4 @@
-# Workflow to retrain the coco neural net to detect new set of objects
+# Workflow to retrain the coco neural net for detecting new set of objects
 
 1) Install Ubuntu
 
@@ -15,21 +15,24 @@ conda create -n tf13 python=2.7
 ```sh
 conda activate tf13
 ```
-
-# install tensorflow 1.3 in environment
-# for different tf versions or without gpu support choose another binary URL
-# https://www.tensorflow.org/install/install_linux
+6) install tensorflow 1.3 in environment
+for different tf versions or without gpu support choose another binary URL
+https://www.tensorflow.org/install/install_linux
+```
 pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.3.0-cp27-none-linux_x86_64.whl
 (pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.3.0-cp27-none-linux_x86_64.whl)
+```
 
-# check tensorflow installation with python
-python
-
-# Python
+7) check tensorflow installation with python
+```sh
+$ python
+```
+```sh
 import tensorflow as tf
 hello = tf.constant('Hello, TensorFlow!')
 sess = tf.Session()
 print(sess.run(hello))
+```
 
 # install libraries (make sure you are still in env tf13)
 ## with apt-get
